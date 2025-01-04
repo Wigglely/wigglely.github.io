@@ -1,78 +1,286 @@
 <!DOCTYPE html>
-<html lang="pt-br">
-<head>
+<html>
+  <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Fórmula 1</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f0f0f0;
-        }
-        header {
-            background-color: #ff0000;
-            color: #ffffff;
-            text-align: center;
-            padding: 1em;
-        }
-        nav {
-            background-color: #333;
-            color: #ffffff;
-            display: flex;
-            justify-content: center;
-            padding: 0.5em;
-        }
-        nav a {
-            color: #ffffff;
-            margin: 0 1em;
-            text-decoration: none;
-        }
-        main {
-            padding: 2em;
-        }
-        footer {
-            background-color: #333;
-            color: #ffffff;
-            text-align: center;
-            padding: 1em;
-            position: fixed;
-            width: 100%;
-            bottom: 0;
-        }
-    </style>
+    <title>fami.town</title>
+
+<link href="http://fonts.cdnfonts.com/css/fortyseven-micro-nbp" rel="stylesheet">
+<link href="/css/brands.css" rel="stylesheet" />
+<link rel="icon" type="image/x-icon" href="/images/favicon.ico">
+
+<style>
+
+body{
+background-color: #fcf7ff;
+font-family: 'FortySeven Micro NBP', sans-serif;
+}
+
+#container{
+display: flex;
+justify-content: center;
+align-items: center;
+width: 800px;
+margin: 0 auto;
+border: 1px solid #ff8300;
+padding: 3px;
+}
+
+#box{
+width: 800px;
+background-color: #fcf7ff;
+color: #121113;
+border: 1px solid #ff8300;
+}
+
+#header{
+margin-bottom: 10px;
+padding: 10px;
+border-bottom: 1px solid #ff8300;
+background-image: linear-gradient(to right, #ff8300, #fcf7ff);
+color: #fcf7ff;
+letter-spacing: 3px;
+}
+
+#header h1{
+margin: 0px;
+}
+
+#side{
+float: left;
+width: 145px;
+padding: 0px 0px 5px 10px;
+overflow: hidden;
+}
+
+.sidebox{
+border: 1px solid #ff8300;
+margin: 0px 0px 5px 0px;
+}
+
+.sidecontent{
+padding: 0px 0px 0px 5px;
+color: #222725;
+font-size: 17px;
+letter-spacing: 1px;
+}
+
+.sidecontent ul, li{
+margin: 0px;
+list-style-type: none;
+padding-left: 0px;
+}
+
+a{
+text-decoration: none;
+color: #ff8300;
+}
+
+a:visited{
+color: #ff8300;
+}
+
+a:hover{
+text-shadow: 0px 0px 2px #FF8300;
+}
+
+#scrollcontainer{
+padding: 5px;
+}
+
+#scrolly{
+overflow: scroll;
+overflow-x: hidden;
+width: 110px;
+height:110px;
+border: 1px solid #ff8300;
+margin: 0 auto;
+text-align: center;
+}
+
+#scrollyheader{
+margin: 0px;
+border-bottom: 1px dotted #ff8300;
+}
+
+#main{
+float: right;
+width: 624px;
+overflow: hidden;
+padding: 0px 10px 5px 0px;
+}
+
+.mainboxes{
+border: 1px solid #ff8300;
+padding: 0px;
+margin: 0px 0px 5px 0px;
+}
+
+.subheader{
+background-image: linear-gradient(to right, #ff8300, #fcf7ff);
+border-bottom: 1px solid #ff8300;
+padding: 3px;
+color: #fcf7ff;
+letter-spacing: 3px;
+}
+
+.subheader h3{
+margin: 0px;
+}
+
+.mainboxescontent{
+padding: 0px 15px 0px 15px;
+color: #6e5057;
+font-size: 17px;
+}
+
+#footer{
+clear: both;
+padding: 3px;
+border-top: 1px solid #ff8300;
+background-image: linear-gradient(to right, #ff8300, #fcf7ff);
+color: #fcf7ff;
+font-size: 14px;
+text-align: right;
+}
+
+#footer p{
+margin: 0px;
+}
+
+::-webkit-scrollbar{
+width: 8px; 
+}
+    
+::-webkit-scrollbar-track{
+background-color: #fcf7ff;
+}
+
+::-webkit-scrollbar-thumb{
+background-color: #ff8300;  
+}
+
+#credit{
+font-size: 12px;
+position: fixed;
+bottom: 0;
+right: 0;
+}
+
+</style>
+
 </head>
+
 <body>
-    <header>
-        <h1>Bem-vindo ao site sobre Fórmula 1</h1>
-    </header>
-    <nav>
-        <a href="#historia">História</a>
-        <a href="#pilotos">Pilotos</a>
-        <a href="#equipes">Equipes</a>
-        <a href="#calendario">Calendário</a>
-    </nav>
-    <main>
-        <section id="historia">
-            <h2>História da Fórmula 1</h2>
-            <p>A Fórmula 1 é a categoria mais popular de automobilismo do mundo, com uma rica história de corridas e campeonatos desde sua fundação em 1950.</p>
-        </section>
-        <section id="pilotos">
-            <h2>Pilotos Icônicos</h2>
-            <p>Ao longo dos anos, muitos pilotos lendários deixaram sua marca na Fórmula 1, como Ayrton Senna, Michael Schumacher e Lewis Hamilton.</p>
-        </section>
-        <section id="equipes">
-            <h2>Principais Equipes</h2>
-            <p>Equipes como Ferrari, McLaren e Mercedes têm sido fundamentais na história da Fórmula 1, proporcionando muitos dos momentos mais memoráveis do esporte.</p>
-        </section>
-        <section id="calendario">
-            <h2>Calendário de Corridas</h2>
-            <p>O calendário de corridas da Fórmula 1 inclui etapas ao redor do mundo, com circuitos icônicos como Mônaco, Silverstone e Monza.</p>
-        </section>
-    </main>
-    <footer>
-        <p>&copy; 2025 Fórmula 1 - Todos os direitos reservados</p>
-    </footer>
+
+<div id="container">
+
+<div id="box">
+
+<div id="header"><h1>Proto CV?</h1></div>
+
+<div id="side">
+
+<div class="sidebox">
+
+<div class="subheader"><h3>Topics</h3></div>
+
+<div class="sidecontent">
+
+<!-- LINK BOX 1 -->
+
+<ul>
+    <li><a href="http://www.youtube.com/">⊳ Network</a></li> 
+    <li><a href="http://www.twitter.com/">⊳ NGFW</a></li> 
+    <li><a href="http://www.instagram.com/">⊳ Troubleshoot</a></li>
+    <li><a href="http://www.tiktok.com/">⊳ Linux</a></li>
+ </ul>
+
+
+<!-- END LINK BOX 1 -->
+
+</div>
+</div>
+
+<div class="sidebox">
+
+<div class="sidecontent">
+
+
+</div>
+</div>
+
+<div class="sidebox">
+
+<div class="subheader"><h3>Social</h3></div>
+
+<div class="sidecontent" id="scrollcontainer">
+
+<div id="scrolly">
+
+<!-- SCROLLBOX CONTENT -->
+
+<p id="scrollyheader">Find me</p>
+<div id="scrollycontent" style="padding:5px;">
+
+<a href="https://www.linkedin.com/in/gustavohtoledo/"><img src="https://content.linkedin.com/content/dam/me/business/en-us/amp/brand-site/v2/bg/LI-Bug.svg.original.svg" style="width: 50px;"><img></a>
+<!--<img src="https://i.imgur.com/msYTKjM.gif" style="width:100%;"><img> -->
+
+<!-- END SCROLLBOX CONTENT -->
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+<div id="main">
+
+<div class="mainboxes">
+
+<div class="subheader"><h3>Who am I?</h3></div>
+
+<div class="mainboxescontent">
+
+
+
+<!-- END CONTENT -->
+
+</div>
+
+</div>
+
+<div class="mainboxes">
+
+
+<div class="mainboxescontent">
+
+
+
+<p style="clear:right;">Maybe personal blog or online CV?
+<img src="https://i.imgur.com/2RWT6ba.jpg" width="150" style="float:left;margin:10px;"><img>
+<p>This page is hosted by GitHub Pages and my domain is registered with CloudFlare, using reverse proxy and some of the security features offered within the free account.</p>
+
+<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laudantium corporis et ratione libero vel iste ducimus sapiente nemo ut minima repudiandae maiores iusto dolorum blanditiis ipsam quibusdam qui, maxime dolor.</p>
+
+</div>
+
+</div>
+
+</div>
+
+
+<div id="footer"><p><a href="mailto:gustavotoledo.ieg@gmail.com">Contact me.</a></p></div>
+
+</div>
+
+</div>
+
+
 </body>
+
 </html>
